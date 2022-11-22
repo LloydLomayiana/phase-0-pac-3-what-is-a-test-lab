@@ -13,10 +13,10 @@ describe("what-is-a-test", () => {
     });
   });
 
-  describe("Message", () => {
-    it("gives the name and height", () => {
+  describe("height", () => {
+    it("is less than 40", () => {
       expect(message).toInclude(name);
-      expect(message).toInclude(height);
+      expect(height).toBeLessThan(40);
     });
   });
 });
